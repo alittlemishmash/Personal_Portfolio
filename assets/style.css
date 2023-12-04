@@ -1,4 +1,5 @@
-* { margin: 0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -79,19 +80,16 @@ footer {
     text-align: left;
 }
 
-.project-images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    column-gap:20px;
+.smaller-images {
+    width: 50%;
+    height: 50%;
 }
 
-#profile-pic {
+#profile-pic img {
     display: flex;
     justify-content: left;
     padding: 20px;
-    height: 500px;
-}
+    width: 50%;
 
 #work-heading,
 #about-me-heading {
@@ -102,45 +100,28 @@ footer {
     text-shadow: lightgrey 2px 1px 0px;
 }
 
+#horision-project {
+    width: 50%;
+    height: 75%;
+    display: flex;
+    padding: 20px;
+    justify-content: left;
+}
+
 #horiseon-project:hover {
     opacity: 0.5;
     filter: grayscale(100%);
     transition: .4s ease-in-out;
-    cursor: crosshair; 
+    cursor: crosshair;
     display: flex;
 }
 
-#wikipedia:hover {
-    opacity: 0.5;
-    filter: grayscale(100%);
-    transition: .4s ease-in-out;
-    cursor: crosshair; 
-    display: flex;
-}
-
-#useless-web:hover {
+.smaller-images:hover {
     opacity: 0.5;
     filter: grayscale(100%);
     transition: .4s ease-in-out;
     cursor: crosshair;
     display: flex;
-}
-
-#stellarium:hover {
-    opacity: 0.5;
-    filter: grayscale(100%);
-    transition: .4s ease-in-out;
-    cursor: crosshair;
-    display: flex;
-}
-
-#world-meter:hover {
-    opacity: 0.5;
-    filter: grayscale(100%);
-    transition: .4s ease-in-out;
-    cursor: crosshair;
-    display: flex;
-
 }
 
 #contact-me {
@@ -171,10 +152,11 @@ footer {
         align-items: center;
         text-align: center;
     }
+
     .project-images {
         justify-content: center;
         align-items: center;
-        
+
     }
 
     header,
