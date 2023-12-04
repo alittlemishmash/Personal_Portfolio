@@ -50,14 +50,14 @@ main {
 footer {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px 30px;
+    padding: 20px;
     background: #e07390;
-    position: relative;
-    bottom: 0;
+    
+
 }
 
 
-.name {
+.header {
     display: flex;
     font-family: 'Avenir Next', 'Trebuchet MS', 'Gill Sans', sans-serif;
     font-size: 48px;
@@ -66,49 +66,31 @@ footer {
     text-shadow: black 3px 2px 0px;
 }
 
-.about-me {
-    display: flex;
-    padding: 0px 20px;
-    font-size: 14px;
-    text-align: left;
-}
-
+.about-me,
 .work {
-    display: flex;
     padding: 0px 20px;
     font-size: 14px;
     text-align: left;
+    
 }
 
-.smaller-images {
-    width: 50%;
-    height: 50%;
-}
+/*container for projext images*/
+.smaller-projects { 
+    display:inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
 
-#profile-pic img {
+}
+/*work images*/
+.work-projects {
+    width: 40%; 
     display: flex;
-    justify-content: left;
-    padding: 20px;
-    width: 50%;
-
-#work-heading,
-#about-me-heading {
-    display: flex;
-    padding: 20px;
-    font-size: 24px;
-    font-weight: 300;
-    text-shadow: lightgrey 2px 1px 0px;
+    padding-bottom: 5px;
+    
 }
 
-#horision-project {
-    width: 50%;
-    height: 75%;
-    display: flex;
-    padding: 20px;
-    justify-content: left;
-}
-
-#horiseon-project:hover {
+.work-projects:hover {
     opacity: 0.5;
     filter: grayscale(100%);
     transition: .4s ease-in-out;
@@ -116,15 +98,7 @@ footer {
     display: flex;
 }
 
-.smaller-images:hover {
-    opacity: 0.5;
-    filter: grayscale(100%);
-    transition: .4s ease-in-out;
-    cursor: crosshair;
-    display: flex;
-}
-
-#contact-me {
+.contact-me{
     display: flex;
     flex-wrap: wrap;
     color: lightyellow;
@@ -137,26 +111,45 @@ footer {
     text-shadow: grey 3px 2px 0px;
 }
 
+#profile-pic {
+    padding: 20px;
+    width: 50%;
+}
+
+#horiseon-project {
+    width: 50%;
+    display: flex;
+    justify-content: left;
+}
+
+#horiseon-project:hover {
+    opacity: 0.5;
+    filter: grayscale(100%);
+    transition: .4s ease-in-out;
+    cursor: crosshair;
+    display: flex;
+}
+
+
 @media screen and (max-width: 1000px) {
 
     main,
     nav,
     footer,
-    .name,
+    .header,
     .about-me,
     .work,
     .contact-me,
-    #work-heading,
-    #about-me-heading {
+    #profile-pic {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        justify-items: center;
     }
 
-    .project-images {
+    .work-projects {
         justify-content: center;
         align-items: center;
-
     }
 
     header,
