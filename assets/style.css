@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 
+/* General selector styling.*/
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0px;
@@ -64,6 +65,7 @@ footer {
     background: #e07390;
 }
 
+/* Header styling for "Michelle Maciejowski" text.*/
 .header {
     display: flex;
     font-family: 'Avenir Next', 'Trebuchet MS', 'Gill Sans', sans-serif;
@@ -73,15 +75,20 @@ footer {
     text-shadow: black 3px 2px 0px;
 }
 
-/* Work project links*/
+/* Work project image links - alignment, sizing and hover effects enabeled.*/
 .work-projects-container {
     display: flex;
 }
 
+.small-projects {
+    display: flex;
+    flex-direction: column;
+}
+
 .project-links {
-   width: 100%;
-   margin: 10px;
-   border: 3px lightgrey;
+    width: 100%;
+    margin: 10px;
+    border: 3px lightgrey;
 }
 
 .project-links:hover {
@@ -89,31 +96,30 @@ footer {
     filter: grayscale(100%);
     transition: .4s ease-in-out;
     cursor: crosshair;
-    display: flex;
 }
 
 .horiseon {
-    width: 100%;
+    width: 500px;
+    height: 880px;
 }
 
 .wikipedia {
-    width: 50%;
+    height: 200px;
 }
 
 .stellarium {
-    width: 50%;
+    height: 200px;
 }
 
 .world-meter {
-    width: 50%;
+    height: 200px;
 }
 
 .useless-web {
-    width: 50%;
+    height: 200px;
 }
 
-
-/*Styling for "Contact Me" text in footer*/
+/*Styling for "Contact Me" text in footer.*/
 .contact-me {
     display: flex;
     flex-wrap: wrap;
@@ -127,28 +133,30 @@ footer {
     text-shadow: grey 3px 2px 0px;
 }
 
+/*Profile pictiure.*/
 #profile-pic {
     padding: 20px;
     width: 50%;
 }
 
-@media screen and (max-width: 1000px) {
+/*Media query for automatic content restructuring/resizing for smaller screens.*/
+@media screen and (max-width: 768px) {
 
     main,
     nav,
     footer,
+    p,
     .header,
     .contact-me,
     #profile-pic {
         flex-direction: column;
-        align-items: center;
         text-align: center;
-        justify-items: center;
+        align-items: center;
+
     }
 
-    .work-projects {
-        justify-content: center;
-        align-items: center;
+    .work-projects-container {
+        flex-direction: column;
     }
 
     header,
