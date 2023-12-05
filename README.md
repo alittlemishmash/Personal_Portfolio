@@ -21,13 +21,14 @@ This is a personal portfolio webpage with links to my current and completed proj
 
 ## Installation
 
-The website can be viewed via the above URL link. Please note that the 'email' link will <u>only </u>automatically open to a user's selected mail application <i>if</i> the user has allowed that certain application to open links directly from websites. 
+The website can be viewed via the above URL link. Please note that the 'email' link will <u>only</u> automatically open to a user's selected mail application <i>if</i> the user has allowed that certain application to open links directly from websites. 
 For any user who does not have this preference enabeled, they can simply right-click the 'email' link and select 'copy email address' to paste my email to their chosen mail application.
 
 
 ## Usage
 
-This website can be viewed on any screen. 
+This website can be viewed on any screen.
+
 Please note that this is currently a work-in-progress (as of Dec 2023) and as such, 4 out of 5 'work' links will take the user to various websites unrelated nor created by me. These links were merely added to showcase my understanding of functioning hyperlinks and psuedo element styling properties.
 
 ![Screenshot of index.html](./assets/images/Profile%20Screenshot.png)
