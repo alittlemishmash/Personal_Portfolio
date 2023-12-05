@@ -47,15 +47,22 @@ main {
     flex-wrap: wrap;
 }
 
+h2 {
+    padding: 10px 20px;
+}
+
+p {
+    padding: 0px 20px;
+    font-size: 14px;
+    text-align: left;
+}
+
 footer {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
     background: #e07390;
-    
-
 }
-
 
 .header {
     display: flex;
@@ -66,31 +73,18 @@ footer {
     text-shadow: black 3px 2px 0px;
 }
 
-.about-me,
-.work {
-    padding: 0px 20px;
-    font-size: 14px;
-    text-align: left;
-    
-}
-
-/*container for projext images*/
-.smaller-projects { 
-    display:inline-flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-
-}
-/*work images*/
-.work-projects {
-    width: 40%; 
+/* Work project links*/
+.work-projects-container {
     display: flex;
-    padding-bottom: 5px;
-    
 }
 
-.work-projects:hover {
+.project-links {
+   width: 100%;
+   margin: 10px;
+   border: 3px lightgrey;
+}
+
+.project-links:hover {
     opacity: 0.5;
     filter: grayscale(100%);
     transition: .4s ease-in-out;
@@ -98,7 +92,29 @@ footer {
     display: flex;
 }
 
-.contact-me{
+.horiseon {
+    width: 100%;
+}
+
+.wikipedia {
+    width: 50%;
+}
+
+.stellarium {
+    width: 50%;
+}
+
+.world-meter {
+    width: 50%;
+}
+
+.useless-web {
+    width: 50%;
+}
+
+
+/*Styling for "Contact Me" text in footer*/
+.contact-me {
     display: flex;
     flex-wrap: wrap;
     color: lightyellow;
@@ -116,29 +132,12 @@ footer {
     width: 50%;
 }
 
-#horiseon-project {
-    width: 50%;
-    display: flex;
-    justify-content: left;
-}
-
-#horiseon-project:hover {
-    opacity: 0.5;
-    filter: grayscale(100%);
-    transition: .4s ease-in-out;
-    cursor: crosshair;
-    display: flex;
-}
-
-
 @media screen and (max-width: 1000px) {
 
     main,
     nav,
     footer,
     .header,
-    .about-me,
-    .work,
     .contact-me,
     #profile-pic {
         flex-direction: column;
